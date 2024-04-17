@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sephora - Elegant Beauty Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Replace with actual background image URL */
+            background-size: cover;
+            background-position: center;
+        }
+        .header, .footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        .navigation {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        .navigation li {
+            display: inline;
+            margin: 0 15px;
+        }
+        .navigation a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .grid-item {
+            position: relative;
+            text-align: center;
+        }
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+        .description {
+            position: absolute;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            width: 100%;
+            padding: 10px;
+            display: none;
+            text-align: left;
+        }
+        .grid-item:hover .description {
+            display: block;
+        }
+        .shop-now {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: pink;
+            color: #fff;
+            cursor: pointer;
+        }
+        .subscribe-form {
+            text-align: center;
+            padding: 20px;
+        }
+        .subscribe-form input[type=email], .subscribe-form button {
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .social-links a {
+            margin: 0 10px;
+        }
+        @media screen and (max-width: 600px) {
+            .navigation li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>Sephora</h1>
+    <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Brands</a></li>
+        <li><a href="#">Offers</a></li>
+    </ul>
+</div>
+
+<div class="grid">
+    <!-- Repeat this block for each product -->
+    <div class="grid-item">
+        <img src="product1.jpg" alt="Product 1"> <!-- Replace with actual product image URL -->
+        <div class="description">Product 1 Description</div>
+        <button class="shop-now">Shop Now</button>
+    </div>
+    <!-- End of product block -->
+</div>
+
+<div class="subscribe-form">
+    <h2>Sign Up for Exclusive Offers</h2>
+    <form>
+        <input type="email" placeholder="Your Email">
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+
+<div class="footer">
+    <p>&copy; 2023 Sephora Beauty Products</p>
+    <div class="social-links">
+        <!-- Replace # with actual links -->
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</div>
+
+</body>
+</html>
